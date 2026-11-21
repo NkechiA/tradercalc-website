@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms of Service — TraderCalc</title>
+<link rel="icon" type="image/svg+xml" href="tradercalc-icon.svg">
+<meta name="description" content="TraderCalc Terms of Service — the terms for using the TraderCalc app, the one-time purchase on Google Play, and how calculation results should be used.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0F1B2D;
+    --paper:#F6F1E5;
+    --paper-line:#DDD2B2;
+    --gold:#D6A144;
+    --gold-bright:#EAC46B;
+    --teal:#2F6F5E;
+    --rust:#C1462F;
+    --ink-text:#1C1710;
+    --cream:#EDE6D6;
+    --cream-dim:#B9AF9B;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{
+    background:var(--paper);
+    color:var(--ink-text);
+    font-family:'IBM Plex Sans', sans-serif;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2{font-family:'Fraunces', serif; font-weight:600; letter-spacing:-0.01em;}
+  a{color:var(--teal);}
+  .mono{font-family:'IBM Plex Mono', monospace;}
+  .wrap{max-width:760px; margin:0 auto; padding:0 28px;}
+
+  .nav{
+    background:var(--ink);
+    border-bottom:1px solid rgba(237,230,214,0.08);
+  }
+  .nav .wrap{display:flex; align-items:center; justify-content:space-between; height:72px; max-width:1120px;}
+  .logo{font-family:'Fraunces', serif; font-weight:600; font-size:20px; color:var(--cream); text-decoration:none; display:flex; align-items:center; gap:9px;}
+  .logo-icon{width:28px; height:28px; border-radius:6px; display:block;}
+  .logo span{color:var(--gold-bright);}
+  .back{color:var(--cream-dim); font-size:14px; text-decoration:none;}
+  .back:hover{color:var(--cream);}
+
+  .doc-head{padding:64px 0 40px; border-bottom:2px solid var(--ink-text);}
+  .eyebrow{
+    font-family:'IBM Plex Mono', monospace;
+    text-transform:uppercase;
+    letter-spacing:0.14em;
+    font-size:12px;
+    color:var(--rust);
+    display:flex; align-items:center; gap:10px;
+    margin-bottom:18px;
+  }
+  .eyebrow::before{content:""; width:22px; height:1px; background:var(--rust);}
+  .doc-head h1{font-size:clamp(30px,4.5vw,42px);}
+  .doc-meta{
+    margin-top:16px;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:13px;
+    color:#6b6046;
+  }
+
+  .summary-box{
+    margin:40px 0 8px;
+    background:#fff;
+    border:1px solid var(--paper-line);
+    border-left:3px solid var(--teal);
+    padding:22px 24px;
+    font-size:15px;
+  }
+  .summary-box strong{display:block; font-family:'IBM Plex Mono',monospace; font-size:12px; text-transform:uppercase; letter-spacing:0.08em; color:var(--teal); margin-bottom:10px;}
+
+  main{padding:12px 0 96px;}
+  section{padding:36px 0; border-bottom:1px dotted var(--paper-line);}
+  section:last-of-type{border-bottom:none;}
+  section h2{font-size:20px; margin-bottom:14px; display:flex; align-items:baseline; gap:10px;}
+  section h2 .num{font-family:'IBM Plex Mono',monospace; font-size:13px; color:#a89a6f; font-weight:500;}
+  section p{margin-bottom:14px; font-size:15.5px; color:#3a3226;}
+  section ul{margin:0 0 14px 22px; font-size:15.5px; color:#3a3226;}
+  section li{margin-bottom:8px;}
+  .yes-no-grid{display:grid; grid-template-columns:1fr 1fr; gap:20px; margin:20px 0;}
+  @media (max-width:600px){ .yes-no-grid{grid-template-columns:1fr;} }
+  .yn-card{background:#fff; border:1px solid var(--paper-line); padding:20px;}
+  .yn-card.no{border-top:3px solid var(--rust);}
+  .yn-card.yes{border-top:3px solid var(--teal);}
+  .yn-card h3{font-family:'IBM Plex Mono',monospace; font-size:12px; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:12px;}
+  .yn-card.no h3{color:var(--rust);}
+  .yn-card.yes h3{color:var(--teal);}
+  .yn-card ul{margin:0; list-style:none; font-size:14px;}
+  .yn-card li{padding:6px 0; border-bottom:1px dotted var(--paper-line); display:flex; gap:8px;}
+  .yn-card li:last-child{border-bottom:none;}
+
+  footer{
+    background:var(--ink);
+    padding:36px 0;
+    text-align:center;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12.5px;
+    color:var(--cream-dim);
+  }
+  footer a{color:var(--gold-bright); text-decoration:none;}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <a href="index.html" class="logo"><img src="tradercalc-icon.svg" class="logo-icon" alt="TraderCalc">TraderCalc</a>
+    <a href="index.html" class="back">← Back to homepage</a>
+  </div>
+</nav>
+
+<div class="doc-head">
+  <div class="wrap">
+    <div class="eyebrow">Legal · Terms</div>
+    <h1>Terms of Service</h1>
+    <div class="doc-meta">Effective date: November 21, 2026 · Applies to the TraderCalc mobile application, published by Hakav Enterprise Limited</div>
+
+    <div class="summary-box">
+      <strong>Plain-language summary</strong>
+      TraderCalc is a calculator you buy once on Google Play. It helps you work out costs, break-even and profit, but the results are only as good as the numbers you enter, and they are not financial, tax or legal advice. Please use the App lawfully, and read the details below.
+    </div>
+  </div>
+</div>
+
+<main class="wrap">
+
+  <section>
+    <h2><span class="num">01</span> Agreement</h2>
+    <p>These Terms of Service ("Terms") are an agreement between you and Hakav Enterprise Limited ("we", "us", "our"), the developer and publisher of TraderCalc ("the App"). By downloading, installing or using the App, you agree to these Terms. If you do not agree, please do not use the App.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">02</span> About the App</h2>
+    <p>TraderCalc is a cost and profit calculator for traders, importers and businesses. You enter your costs, TraderCalc converts currencies using live exchange rates, and it shows results such as your real cost per item, break-even price, minimum profitable selling price, profit and ROI.</p>
+    <p>The App does not require an account. Your calculations are stored on your own device, as described in our <a href="privacy.html">Privacy Policy</a>.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">03</span> Who can use the App</h2>
+    <p>TraderCalc is intended for adults aged 18 and over. By using the App, you confirm that you are at least 18 (or the age of majority in your country, if higher) and that you have the legal capacity to agree to these Terms.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">04</span> Purchase and licence</h2>
+    <p>TraderCalc is sold as a one-time purchase through Google Play. The purchase unlocks all calculators, saving, previous calculations and export. There are no subscription or renewal fees for the App.</p>
+    <p>In Nigeria, the price is ₦4,700, VAT included. In other countries, the price is shown in your local currency on the Google Play listing and on our pricing page, and any applicable VAT is handled by Google Play according to your country or region's tax requirements.</p>
+    <p>Subject to these Terms, we grant you a personal, non-exclusive, non-transferable, revocable licence to install and use the App on devices that you own or control, for your own business or personal use. Your use of Google Play is also subject to Google's own terms.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">05</span> Payments and refunds</h2>
+    <p>All payments are processed by Google Play. We never receive or store your card details or other payment information. Refunds are handled through Google Play under its refund policy and applicable consumer law. If you contact us about a refund, we will point you to the right process and help where we can. Nothing in these Terms limits any refund or cancellation right you have under the law of your country.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">06</span> Results are estimates, not advice</h2>
+    <p>TraderCalc produces results from the figures you enter and from exchange-rate data supplied by a third party. Exchange rates are indicative only; they may be delayed, unavailable, or different from the rates your bank, supplier, courier or customs authority actually applies. Results are estimates.</p>
+    <p>TraderCalc is a calculation tool. It does not provide financial, accounting, tax, customs or legal advice. You are responsible for checking your inputs and results, and for any business decision you make using the App.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">07</span> Acceptable use</h2>
+    <p>You agree not to:</p>
+<ul><li>copy, modify, decompile or reverse engineer the App, except to the extent the law allows you to despite this restriction;</li><li>resell, rent, lease, sublicense or share the App, or your purchase of it, with others;</li><li>use the App to break any law, or to deceive or harm others;</li><li>interfere with the App's exchange-rate requests or try to get around the purchase or any technical limits of the App.</li></ul>
+  </section>
+
+  <section>
+    <h2><span class="num">08</span> Third-party services</h2>
+    <p>The App relies on services we do not control, including Google Play (for purchase and distribution) and exchangerate-api.com (for live exchange rates). Those services have their own terms and policies, and may change or be unavailable from time to time.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">09</span> Intellectual property</h2>
+    <p>The App, including its name, logo, design, text and software, is owned by Hakav Enterprise Limited or its licensors and is protected by intellectual property laws. These Terms give you a licence to use the App; they do not transfer any ownership to you. The figures and calculations you enter remain yours.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">10</span> Privacy</h2>
+    <p>How the App handles data is explained in our <a href="privacy.html">Privacy Policy</a>, which forms part of these Terms.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">11</span> Updates and changes to the App</h2>
+    <p>We may update, improve, change or remove features of the App from time to time. The App also depends on your device, its operating system and Google Play, which we do not control. If we make a significant change or decide to discontinue the App, we will give reasonable notice where practicable, through the App's Google Play listing or this website.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">12</span> Disclaimers and limits on liability</h2>
+    <p>To the extent the law allows, the App is provided "as is" and "as available", and we do not promise that it will be error-free, uninterrupted, or that its results will be accurate for your particular situation.</p>
+    <p>To the extent the law allows, we are not liable for indirect or consequential losses, or for lost profits, lost sales or business losses arising from your use of the App, and our total liability to you for any claim relating to the App is limited to the amount you paid for it.</p>
+    <p>Nothing in these Terms excludes or limits any liability that cannot be excluded or limited by law, or any rights you have as a consumer under the law of the country where you live.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">13</span> Ending these Terms</h2>
+    <p>You can stop using the App at any time by uninstalling it. We may suspend or end your licence if you seriously or repeatedly break these Terms. If your licence ends, you must stop using the App and delete it from your devices.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">14</span> Governing law</h2>
+    <p>These Terms are governed by the laws of the Federal Republic of Nigeria. This does not take away any mandatory consumer protections that apply to you under the law of the country where you live. Subject to those protections, disputes relating to these Terms or the App will be handled by the courts of Nigeria.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">15</span> Changes to these Terms</h2>
+    <p>We may update these Terms from time to time. When we do, we will post the new version on this page and revise the effective date above. If you keep using the App after an update takes effect, you accept the updated Terms.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">16</span> Contact us</h2>
+    <p>If you have any questions about these Terms, reach us at <a href="mailto:info@tradercalc.net">info@tradercalc.net</a>.</p>
+  </section>
+
+</main>
+
+<footer>
+  © 2026 TraderCalc — Hakav Enterprise Limited · <a href="index.html">Back to homepage</a> · <a href="privacy.html">Privacy Policy</a>
+</footer>
+
+</body>
+</html>
